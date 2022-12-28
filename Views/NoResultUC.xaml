@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="WikipediaAPI.Views.NoResultUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WikipediaAPI.Views"
+             mc:Ignorable="d" 
+             Height="400"
+             Width="800">
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="6*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Image Source="\Assets\noresult.png"></Image>
+        </Grid>
+
+        <Grid Grid.Row="2">
+            <TextBlock Style="{StaticResource SimpleTextBlockStyle}"
+                       HorizontalAlignment="Center"
+                       Width="545"
+                       Margin="20,5,0,5"
+                       TextAlignment="Left"
+                       Text="Sorry, nothing was found based on your search.">
+            </TextBlock>
+        </Grid>
+    </Grid>
+</UserControl>
